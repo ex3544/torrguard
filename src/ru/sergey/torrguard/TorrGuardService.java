@@ -79,6 +79,8 @@ public class TorrGuardService extends Service {
 
         // Периодический опрос живости (сценарий А)
         handler.post(poll);
+        // Постоянное задание — страховка автозапуска после перезагрузки
+        GuardJobService.schedule(this);
         Log.i(TAG, "service started");
     }
 

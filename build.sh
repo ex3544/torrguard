@@ -24,7 +24,7 @@ export PATH="$JDK_BIN:$PATH"
   -I "$PLATFORM/android.jar" \
   --manifest "$P/AndroidManifest.xml" \
   --min-sdk-version 26 --target-sdk-version 28 \
-  --version-code 3 --version-name 1.2 \
+  --version-code 4 --version-name 1.3 \
   -o "$P/build/unsigned.apk"
 
 rm -rf "$P/build/classes" "$P/build/dexdir"
